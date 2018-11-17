@@ -5,7 +5,8 @@ const PORT = 3000;
 
 app.get('/', (req, res) => {
   res.send('Node and express server started')
-})
+});
 
 app.listen(PORT, () => {
-})
+  console.log(`listening on //localhost: ${PORT}`);
+});
