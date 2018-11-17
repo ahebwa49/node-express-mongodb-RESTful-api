@@ -1,4 +1,4 @@
-# Server app with node, express and mongoDB
+# RESTful api with node, express and mongoDB
 
 This server app is a RESTful api
 
