@@ -1,4 +1,4 @@
-# Future Digital Blog App
+# Server app with node, express and mongoDB
 
 This server app is a RESTful api
 
@@ -12,6 +12,7 @@ This server app is a RESTful api
 6. babel for ES6 => vanillaJS
 7. bodyParser
 8. Postman for firing off the requests.
+9. Mongoose library
 
 # Getting Started
 
