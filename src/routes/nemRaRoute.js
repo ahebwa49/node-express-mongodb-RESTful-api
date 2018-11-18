@@ -11,5 +11,6 @@ const routes = (app) => {
   .post(addNewContact);
 
  app.route('/contact/:contactId')
+ .get(getContactWithId)
 }
 export default routes;
