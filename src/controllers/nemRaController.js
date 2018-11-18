@@ -14,3 +14,7 @@ export const addNewContact = (req, res) => {
     res.json(contact);
   });
 }
+
+export const getContacts = (req, res) => {
+  Contact.find({})
+}
