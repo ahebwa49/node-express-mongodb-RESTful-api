@@ -9,5 +9,7 @@ const routes = (app) => {
     next();
   }, getContacts)
   .post(addNewContact);
+
+ app.route('/contact/:contactId')
 }
 export default routes;
