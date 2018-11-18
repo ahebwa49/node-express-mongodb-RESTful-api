@@ -1,17 +1,14 @@
+var express = require('express');
+import routes from './src/routes/nemRaRoute';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import routes from './src/routes/nemRaRoute';
-var express = require('express');
-//import express from 'express;
 
 const app = express();
-const PORT = 3000;
+const port = 3000;
 
-routes(app);
-
-// setup mongoDB
+// mongoose connection
 mongoose.Promise = global.Promise;
-mongoose.connect = ('mongodb://localhost/NEMRAdb', {
+mongoose.connect('mongodb://localhost/NEMRAdb', {
   useMongoClient: true
 });
 
@@ -19,10 +16,12 @@ mongoose.connect = ('mongodb://localhost/NEMRAdb', {
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+routes(app);
+
 app.get('/', (req, res) => {
   res.send('Node and express server started')
 });
 
-app.listen(PORT, () => {
-  console.log(`listening on //localhost: ${PORT}`);
+app.listen(port, () => {
+  console.log(`listening on //localhost: ${port}`);
 });

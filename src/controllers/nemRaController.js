@@ -1,5 +1,6 @@
-import mongoose from 'mongoose';
 import {ContactSchema} from '../models/nemRaModel';
+import mongoose from 'mongoose';
+
 
 const Contact = mongoose.model('Contact', ContactSchema);
 
