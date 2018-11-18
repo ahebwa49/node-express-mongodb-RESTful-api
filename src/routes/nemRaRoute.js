@@ -1,4 +1,4 @@
-import {addNewContact, getContacts, getContactWithId, updateContact} from '../controllers/nemRaController';
+import {addNewContact, getContacts, getContactWithId, updateContact, deleteContact} from '../controllers/nemRaController';
 
 const routes = (app) => {
 
@@ -14,5 +14,6 @@ const routes = (app) => {
  .get(getContactWithId)
 
  .put(updateContact)
+
 }
 export default routes;
