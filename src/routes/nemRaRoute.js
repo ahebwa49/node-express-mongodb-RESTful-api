@@ -7,6 +7,7 @@ const routes = (app) => {
     console.log(`request from: ${req.originalUrl}`)
     console.log(`type: ${req.method}`)
     next();
-  }``);
+  }``)
+  .post()
 }
 export default routes;
