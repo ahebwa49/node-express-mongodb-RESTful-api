@@ -9,6 +9,7 @@ export const addNewContact = (req, res) => {
   newContact.save((err, contact) => {
     if (err) {
       res.send(err);
-
+    }
+    res.json(contact);
   });
 }
