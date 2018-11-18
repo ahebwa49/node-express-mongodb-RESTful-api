@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import bodyParser from 'body-parser';
 import routes from './src/routes/nemRaRoute';
 var express = require('express');
 //import express from 'express;
