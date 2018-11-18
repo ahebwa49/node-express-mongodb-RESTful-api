@@ -1,6 +1,6 @@
 # RESTful api with node, express and mongoDB
 
-This server app is a RESTful api
+A full api to create, read, update and delete items in the database
 
 # Technologies used
 
