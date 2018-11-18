@@ -25,4 +25,4 @@
       default: Date.now
     }
   });
-  
+  export default ContactSchema;
