@@ -15,5 +15,7 @@ const routes = (app) => {
 
  .put(updateContact)
 
+ .delete(deleteContact);
+
 }
 export default routes;
