@@ -9,6 +9,9 @@ const PORT = 3000;
 
 routes(app);
 
+// setup mongoDB
+mongoose.Promise = global.Promise;
+
 app.get('/', (req, res) => {
   res.send('Node and express server started')
 });
