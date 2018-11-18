@@ -23,3 +23,7 @@ export const getContacts = (req, res) => {
     res.json(contact);
   })
 }
+
+export const getContactWithId = (req, res) => {
+  Contact.findById(req.params.contactId)
+}
