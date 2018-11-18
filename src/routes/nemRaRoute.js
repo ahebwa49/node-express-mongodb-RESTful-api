@@ -12,5 +12,7 @@ const routes = (app) => {
 
  app.route('/contact/:contactId')
  .get(getContactWithId)
+
+ .put(updateContact)
 }
 export default routes;
