@@ -15,6 +15,10 @@ mongoose.connect = ('mongodb://localhost/NEMRAdb', {
   useMongoClient: true
 });
 
+//setup bodyParser
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+
 app.get('/', (req, res) => {
   res.send('Node and express server started')
 });
