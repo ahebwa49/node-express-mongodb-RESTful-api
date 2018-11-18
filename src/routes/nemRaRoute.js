@@ -1,4 +1,4 @@
-import {addNewContact, getContacts, getContactWithId} from '../controllers/nemRaController';
+import {addNewContact, getContacts, getContactWithId, updateContact} from '../controllers/nemRaController';
 
 const routes = (app) => {
 
