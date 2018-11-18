@@ -8,6 +8,6 @@ const routes = (app) => {
     console.log(`type: ${req.method}`)
     next();
   }``)
-  .post()
+  .post(addNewContact);
 }
 export default routes;
