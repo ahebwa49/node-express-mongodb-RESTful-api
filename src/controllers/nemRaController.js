@@ -16,5 +16,9 @@ export const addNewContact = (req, res) => {
 }
 
 export const getContacts = (req, res) => {
-  Contact.find({})
+  Contact.find({}, (err, contact) =>{
+    if (err) {
+      res.send(err);
+    }
+  })
 }
