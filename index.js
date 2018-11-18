@@ -11,7 +11,9 @@ routes(app);
 
 // setup mongoDB
 mongoose.Promise = global.Promise;
-mongoose.connect = ('mongodb://localhost/NEMRAdb')
+mongoose.connect = ('mongodb://localhost/NEMRAdb', {
+  useMongoClient: true
+});
 
 app.get('/', (req, res) => {
   res.send('Node and express server started')
