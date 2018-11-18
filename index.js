@@ -1,3 +1,4 @@
+import mongoose from 'mongoose';
 import routes from './src/routes/nemRaRoute';
 var express = require('express');
 //import express from 'express;
